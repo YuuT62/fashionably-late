@@ -1,0 +1,45 @@
+.header{
+    font-family: "Noto Serif JP", serif;
+    background-color: #fff;
+}
+.header__inner{
+    margin: 0 auto;
+    max-width: 1230px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    color:#8C7969;
+    font-size: 40px;
+    margin-left: 38%;
+    font-weight: bold;
+}
+
+.header__button{
+    width: 70px;
+    margin-right: 50px;
+}
+
+.header__button-submit{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #E2D4C7;
+    border-radius: 1px;
+    background: F6F6F6;
+}
+.header__button-submit a{
+    text-decoration: none;
+    color: #E3D8CC;
+    font-family: "Noto Serif JP", serif;
+}
+
+.form__error{
+    color: red;
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    text-align: left;
+}
