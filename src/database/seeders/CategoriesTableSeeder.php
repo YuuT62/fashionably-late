@@ -34,5 +34,6 @@ class CategoriesTableSeeder extends Seeder
             'content'=>'その他'
         ];
         DB::table('categories')->insert($param);
+
     }
 }

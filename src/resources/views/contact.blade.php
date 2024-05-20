@@ -52,15 +52,15 @@
             <div class="contact-form__group-content">
                 <div class="contact-form__input--radio">
                     <div class="contact-form__input--radio-button">
-                        <input type="radio" name="gender" value="0" id="male" checked="checked">
+                        <input type="radio" name="gender" value="1" id="male" checked="checked">
                             <label for="male">男性</label>
                     </div>
                     <div class="contact-form__input--radio-button">
-                        <input type="radio" name="gender" value="女性" id="female">
+                        <input type="radio" name="gender" value="2" id="female">
                             <label for="female">女性</label>
                     </div>
                     <div class="contact-form__input--radio-button">
-                        <input type="radio" name="gender" value="その他" id="other">
+                        <input type="radio" name="gender" value="3" id="other">
                             <label for="other">その他</label>
                     </div>
                 </div>
@@ -107,10 +107,16 @@
             </div>
         </div>
         <div class="contact-form__error">
-            @error('first-number')
+            @if ($errors->has('first-number'))
             <span>※</span>
-            {{ $message }}
-            @enderror
+            {{ $errors->first('first-number') }}
+            @elseif ($errors->has('middle-number'))
+            <span>※</span>
+            {{ $errors->first('middle-number') }}
+            @elseif ($errors->has('last-number'))
+            <span>※</span>
+            {{ $errors->first('last-number') }}
+            @endif
         </div>
 
         <div class="contact-form__group">
@@ -179,7 +185,7 @@
             </div>
             <div class="contact-form__group-content">
                 <div class="contact-form__input--textarea" >
-                    <textarea name="content" value="{{ old('content') }}" placeholder="お問い合わせ内容をご記載ください "></textarea>
+                    <textarea name="content" placeholder="お問い合わせ内容をご記載ください ">{{ old('content') }}</textarea>
                 </div>
             </div>
         </div>

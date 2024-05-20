@@ -184,10 +184,6 @@
 
 
 /* ↓ paginationのスタイル ↓ */
-.admin__page{
-    /* width: 30%; */
-}
-
 .paginationWrap {
     font-size: 14px;
 }
@@ -252,33 +248,104 @@
 }
 
 /* ↓ モーダルウィンドウのスタイル  ↓*/
-
-.modal-content{
-    width: 70%;
-    max-width: 1230px;
-    margin: 0 auto;
+.modal__overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
     z-index: 1;
-    border: 2px solid #aaa;
+    display: none;
+}
+.modal__content{
+    width: 40%;
+    margin: 0 auto;
+    z-index: 2;
+    border: 2px solid #8B7969;
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+.admin-table__item label{
+    border: 1px solid #F6F5F5;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #DFD0C2;
+    background-color: #FCFCFC;
+}
+.modal-check,
+.modal__close-button{
+    display: none;
+}
+.modal-check:checked + div.modal__overlay{
+    display: block;
+}
+.modal-delete:checked + div.modal__overlay{
     display: none;
 }
 
-.modal-check:checked + .modal-contentaaa{
-    display: block;
-    width: 70%;
-    max-width: 1230px;
-    margin: 0 auto;
-    z-index: 1;
-    border: 2px solid #aaa;
-    background: #fff;
-    padding: 10px 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.modal__close{
+    margin: 15px;
+    margin-bottom: 50px;
+    text-align: right;
 }
+.modal__close label{
+    border-radius: 50%;
+    border: 1px solid #8B7969;
+    color: #8B7969;
+    padding: 2px 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+.modal__group{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.modal__group-title{
+    color: #8B7969;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    width: 30%;
+}
+.modal__group-content{
+    width: 60%;
+}
+.modal__group-content input,
+.modal__group-content textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    background: #fff;
+    color: #8C7969;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.modal__delete{
+    text-align: center;
+    margin: 50px;
+}
+.modal__delete-button{
+    border: none;
+    background-color: #BA370D;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+

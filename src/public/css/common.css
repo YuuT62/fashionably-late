@@ -30,7 +30,8 @@
     border-radius: 1px;
     background: F6F6F6;
 }
-.header__button-submit a{
+.header__button-submit a,
+.header__button-submit span{
     text-decoration: none;
     color: #E3D8CC;
     font-family: "Noto Serif JP", serif;

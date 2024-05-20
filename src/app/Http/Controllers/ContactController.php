@@ -22,7 +22,7 @@ class ContactController extends Controller
 
     public function store(Request $request){
         $contact = $request->only(['category_id','first_name','last_name','gender','email','first-number','middle-number','last-number','address','building','content']);
-        $contact =array_merge($contact,array('tell'=>$contact['first-number'].$contact['first-number'].$contact['first-number']));
+        $contact =array_merge($contact,array('tell'=>$contact['first-number'].$contact['middle-number'].$contact['last-number']));
         Contact::create($contact);
         return view('thanks');
     }

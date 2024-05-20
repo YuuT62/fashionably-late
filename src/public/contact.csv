@@ -1,0 +1,8 @@
+id,category_id,first_name,last_name,gender,email,tell,address,building,content,created_at,updated_at
+13,ショップへのお問い合わせ,治,廣川,その他,haruka31@example.net,09071075991,"5649328  山口県井高市北区浜田町中島2-10-6 ハイツ鈴木103号",esse,"Quia sapiente quia adipisci eveniet impedit.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+16,商品の交換について,健一,廣川,その他,yuki78@example.com,09063875014,"2725782  徳島県渚市西区浜田町伊藤5-1-3",enim,"Cupiditate ea soluta soluta recusandae repellat officia quia nostrum.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+17,商品トラブル,太郎,石田,その他,sayuri30@example.org,0967301126,"8095245  秋田県野村市南区村山町高橋4-2-4 ハイツ井高101号",provident,"Exercitationem suscipit corporis iure et.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+19,商品のお届けについて,裕太,藤本,その他,suzuki.akira@example.org,0669912546,"6047898  広島県大垣市西区小泉町宮沢5-6-8",atque,"Pariatur facilis sunt sint consectetur quos enim libero.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+21,ショップへのお問い合わせ,智也,青山,その他,qwakamatsu@example.net,0925450328,"7413301  高知県小泉市北区桐山町小林3-1-8 ハイツ山本104号",exercitationem,"Ad et voluptates incidunt.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+26,その他,和也,笹田,その他,sakamoto.sayuri@example.net,0840958617,"2176920  静岡県井上市西区小泉町坂本5-5-10 ハイツ山田106号",eaque,"Vel et est molestias dolores nostrum molestiae.","2024-05-21 01:51:59","2024-05-21 01:51:59"
+31,商品の交換について,聡太郎,渚,その他,nkondo@example.com,0770958602,"4637759  神奈川県山本市中央区吉田町吉本5-6-5 コーポ佐々木106号",harum,"Ut earum delectus atque enim rem exercitationem voluptatem.","2024-05-21 01:51:59","2024-05-21 01:51:59"

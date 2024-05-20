@@ -28,7 +28,7 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">性別</th>
                     <td class="confirm-table__text">
-                        <?php $gender=array('男性','女性','その他'); ?>
+                        <?php $gender=array('','男性','女性','その他'); ?>
                         <input type="text" value="{{ $gender[$contact['gender']] }}" />
                         <input type="hidden" name="gender" value="{{ $contact['gender'] }}" />
                     </td>
@@ -81,8 +81,8 @@
                 <button class="confirm-form__button--send">送信</button>
             </div>
     </form>
-            <div class="confirm-form__button">
-                <button class="confirm-form__button--update">修正</button>
-            </div>
-        </div>
+    <div class="confirm-form__button">
+        <button class="confirm-form__button--update" type="button" onClick="history.back()">修正</button>
+    </div>
+</div>
 @endsection
