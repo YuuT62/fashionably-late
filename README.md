@@ -1,8 +1,9 @@
 ##お問合せフォーム
 
  ##環境構築
-  1. git clone
-  2. docker-compose up -d -build
+  1. git clone git@github.com:YuuT62/fashionably-late.git
+  2. cd fashionably-late/
+  3. docker-compose up -d --build
 
 *MySQLは、OSによって起動しない場合があるので、それぞれのPCに合わせてdocker-compose.ymlファイルを編集してください。
 
@@ -10,9 +11,18 @@
  1. docker-compose exec php bash
  2. composer install
  3. .env.exampleファイルから.envファイルを作成し、環境変数を変更
- 4. php artisan key:generate
- 5. php artisan maigrate
- 6. php artisan db:seed
+
+      12行目)　DB_HOST=mysql
+    
+      14行目)　DB_DATABASE=laravel_db
+    
+      15行目)　DB_USERNAME=laravel_user
+    
+      16行目)　DB_PASSWORD=laravel_pass
+    
+ 5. php artisan key:generate
+ 6. php artisan migrate
+ 7. php artisan db:seed
 
 ##使用技術
  ・ PHP 7.4.9
@@ -38,5 +48,9 @@
  ユーザ登録ページ：register
  
  ログインページ：login
+
+ ※Windowsの場合、ファイル権限エラーでアクセスできないことがあるため、以下のコマンドで回避
+ 
+ sudo chmod -R 777 src/*
 
 
